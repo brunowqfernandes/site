@@ -12,7 +12,8 @@
     "vite": "^4.4.5"
   },
   "dependencies": {
+    "bootstrap": "^5.2.3",
     "sass": "^1.66.1",
-    "bootstrap": "^5.2.3"
+    "swiper": "^10.2.0"
   }
 }

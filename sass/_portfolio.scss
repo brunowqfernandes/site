@@ -1,0 +1,57 @@
+.portfolio {
+    .swiper-container {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+      
+    .swiper-slide {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        .container {
+            width: 100%;
+        }
+    }
+
+    .swiper-arrow {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background-color: $color-auxiliar-2;
+        position: relative;
+        border: 3px solid rgba(#C8FEDE, .38);
+        transition: all 300ms;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        &::before {
+            content: '';
+            width: 10px;
+            height: 14px;
+            background: url('../assets/img/arrow.png') center no-repeat;
+            filter: brightness(0) saturate(100%);
+            background-size: contain;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            transition: all 300ms;
+        }
+        &:hover {
+            background-color: $color-auxiliar-3;
+            &::before {
+                filter: none;
+            }
+        }
+        &.swiper-button-prev {
+            transform: scaleX(-1) translateY(-50%);
+            left: 30px;
+        }
+        &.swiper-button-next {
+            right: 30px;
+        }
+    }
+}
