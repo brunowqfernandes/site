@@ -37,3 +37,23 @@
         }
     }
 }
+
+.mini-card {
+    background: radial-gradient(circle at 13% 80%, $color-gradient-1 0%, $color-gradient-2 100%);
+    display: flex;
+    padding: 24px;
+    color: #fff;
+    gap: 15px;
+    align-items: center;
+    .icon {
+        align-items: center;
+        border-radius: 4px;
+        background-color: $color-primary;
+        display: flex;
+        height: inherit;
+        justify-content: center;
+        flex-shrink: 0;
+        width: 64px;
+        height: 64px;
+    }
+}

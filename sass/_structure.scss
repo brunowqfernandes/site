@@ -14,6 +14,11 @@ body {
 
 main{
     font-size: $font-text-sm;
+    p {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
 
 h1,h2,h3,h4,h5 {
@@ -59,7 +64,7 @@ h2 {
     border-left: 3px solid $color-tertiary;
     font-size: 16px;
     font-family: $font-abc-mono;
-    padding-left: 24px;
+    padding-left: 12px;
 }
 
 .font-text-xs {

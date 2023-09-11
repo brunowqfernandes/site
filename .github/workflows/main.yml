@@ -11,7 +11,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ftp.begesolucoes.com.br
+        server: 192.185.176.229
         username: begeso70
         password: Bege@2023
         local-dir: dist/
