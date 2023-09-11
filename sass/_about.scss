@@ -1,0 +1,13 @@
+.about {
+    padding: 140px 0;
+    position: relative;
+    .tagline {
+        margin-bottom: 16px;
+    }
+    h2 {
+        margin-bottom: 40px;
+    }
+    p:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}

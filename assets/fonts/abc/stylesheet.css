@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'ABC Favorit Book';
+    src: url('ABCFavorit-Book.woff2') format('woff2'),
+        url('ABCFavorit-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Favorit Book';
+    src: url('ABCFavorit-BookItalic.woff2') format('woff2'),
+        url('ABCFavorit-BookItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Favorit';
+    src: url('ABCFavorit-BoldItalic.woff2') format('woff2'),
+        url('ABCFavorit-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Favorit';
+    src: url('ABCFavorit-Medium.woff2') format('woff2'),
+        url('ABCFavorit-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Favorit';
+    src: url('ABCFavorit-LightItalic.woff2') format('woff2'),
+        url('ABCFavorit-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Favorit';
+    src: url('ABCFavorit-MediumItalic.woff2') format('woff2'),
+        url('ABCFavorit-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Favorit Mono';
+    src: url('ABCFavoritMono-BoldItalic.woff2') format('woff2'),
+        url('ABCFavoritMono-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Favorit Mono Book';
+    src: url('ABCFavoritMono-Book.woff2') format('woff2'),
+        url('ABCFavoritMono-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Favorit Mono';
+    src: url('ABCFavoritMono-Bold.woff2') format('woff2'),
+        url('ABCFavoritMono-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Favorit Mono';
+    src: url('ABCFavoritMono-Light.woff2') format('woff2'),
+        url('ABCFavoritMono-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Favorit';
+    src: url('ABCFavorit-Light.woff2') format('woff2'),
+        url('ABCFavorit-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Favorit Mono';
+    src: url('ABCFavoritMono-Medium.woff2') format('woff2'),
+        url('ABCFavoritMono-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Favorit Mono Book';
+    src: url('ABCFavoritMono-BookItalic.woff2') format('woff2'),
+        url('ABCFavoritMono-BookItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Favorit Mono';
+    src: url('ABCFavoritMono-LightItalic.woff2') format('woff2'),
+        url('ABCFavoritMono-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Favorit';
+    src: url('ABCFavorit-Regular.woff2') format('woff2'),
+        url('ABCFavorit-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Favorit Mono';
+    src: url('ABCFavoritMono-Regular.woff2') format('woff2'),
+        url('ABCFavoritMono-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Favorit Mono';
+    src: url('ABCFavoritMono-RegularItalic.woff2') format('woff2'),
+        url('ABCFavoritMono-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Favorit Mono';
+    src: url('ABCFavoritMono-MediumItalic.woff2') format('woff2'),
+        url('ABCFavoritMono-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ABC Favorit';
+    src: url('ABCFavorit-Bold.woff2') format('woff2'),
+        url('ABCFavorit-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="190" height="49" viewBox="0 0 190 49">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_17836" data-name="Retângulo 17836" width="47.337" height="47.337" rx="23.668" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="-0.007" y1="1.007" x2="-0.002" y2="1.007" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#20201f"/>
+      <stop offset="0.008" stop-color="#20201f"/>
+      <stop offset="0.497" stop-color="#1a1a19"/>
+      <stop offset="1" stop-color="#0e0e0d"/>
+    </linearGradient>
+    <clipPath id="clip-path-2">
+      <rect id="Retângulo_17837" data-name="Retângulo 17837" width="49" height="49" transform="translate(-0.146 -0.021)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-2" x1="-0.002" y1="1.002" x2="0.002" y2="1.002" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#39fc96"/>
+      <stop offset="0.55" stop-color="#71c16b"/>
+      <stop offset="1" stop-color="#2fd7d8"/>
+    </linearGradient>
+    <clipPath id="clip-path-3">
+      <path id="Caminho_1921" data-name="Caminho 1921" d="M52.919,55.211l-1.5,1.5a1.305,1.305,0,0,0,0,1.845l2.54,2.54s5.208,5.493.827,9.873l-1.374,1.374a1.3,1.3,0,0,1-1.845,0L51.4,72.18a1.3,1.3,0,0,1,0-1.845l.352-.352s3.41-3.391,0-6.8l-7.971-7.971a1.3,1.3,0,0,0-1.845,0L31.381,65.763a1.3,1.3,0,0,0,0,1.846l4.055,4.047L41.79,78.01a1.3,1.3,0,0,0,1.845,0L45.3,76.346a1.3,1.3,0,0,0,0-1.845l-2.772-2.772s-5.036-5.407.328-10.772l.314-.314a1.3,1.3,0,0,1,1.845,0l.276.276a1.3,1.3,0,0,1,0,1.845l-.923.923s-2.977,2.787,1.608,7.371L52.9,77.982a1.3,1.3,0,0,0,1.845,0L65.217,67.51a1.3,1.3,0,0,0,0-1.845L54.764,55.211a1.3,1.3,0,0,0-1.845,0" transform="translate(-30.999 -54.829)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-3" x1="-0.202" y1="1.528" x2="-0.196" y2="1.528" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#71c16b"/>
+      <stop offset="1" stop-color="#39fc96"/>
+    </linearGradient>
+  </defs>
+  <g id="Grupo_3155" data-name="Grupo 3155" transform="translate(-381 -65)">
+    <text id="Begê_soluções" data-name="Begê soluções" transform="translate(443 81)" fill="#fff" font-size="15" font-family="Orbitron-Black, Orbitron" font-weight="800"><tspan x="0" y="15">Begê soluções</tspan></text>
+    <g id="Grupo_3148" data-name="Grupo 3148" transform="translate(381.146 65.021)">
+      <g id="Grupo_3143" data-name="Grupo 3143" transform="translate(0.811 0.811)">
+        <g id="Grupo_3142" data-name="Grupo 3142" clip-path="url(#clip-path)">
+          <rect id="Retângulo_17835" data-name="Retângulo 17835" width="48.291" height="48.291" transform="translate(-0.963 0.02) rotate(-1.166)" fill="url(#linear-gradient)"/>
+        </g>
+      </g>
+      <g id="Grupo_3145" data-name="Grupo 3145" transform="translate(0 0)">
+        <g id="Grupo_3144" data-name="Grupo 3144" clip-path="url(#clip-path-2)">
+          <path id="Caminho_1920" data-name="Caminho 1920" d="M38.331,48.532v.695H11.4A10.9,10.9,0,0,1,.5,38.331V11.4A10.9,10.9,0,0,1,11.4.5H38.331a10.9,10.9,0,0,1,10.9,10.9V38.331a10.9,10.9,0,0,1-10.9,10.9h0V47.837a9.518,9.518,0,0,0,9.506-9.506V11.4a9.518,9.518,0,0,0-9.506-9.506H11.4A9.518,9.518,0,0,0,1.889,11.4V38.331A9.518,9.518,0,0,0,11.4,47.837H38.331Z" transform="translate(-0.384 -0.384)" fill="url(#linear-gradient-2)"/>
+        </g>
+      </g>
+      <g id="Grupo_3147" data-name="Grupo 3147" transform="translate(7.179 12.697)">
+        <g id="Grupo_3146" data-name="Grupo 3146" clip-path="url(#clip-path-3)">
+          <rect id="Retângulo_17838" data-name="Retângulo 17838" width="34.856" height="23.818" transform="translate(-0.128 -0.127)" fill="url(#linear-gradient-3)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
