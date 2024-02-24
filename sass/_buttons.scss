@@ -1,8 +1,12 @@
-button {
+button, a.btn {
     background: transparent;
     border: 3px solid $color-primary;
-    color: #fff;
+    color: inherit;
     font-size: 12px;
     text-transform: uppercase;
     padding: 20px 40px;
+    &:hover {
+        background-color: $color-primary;
+        color: #000;
+    }
 }

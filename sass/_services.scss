@@ -1,7 +1,7 @@
 .services {
     background: url('../assets/img/services-bg.png') top left;
     color: #1A1A1A;
-    padding: 128px 0 240px;
+    padding: 128px 0 128px;
     position: relative;
     &::before, &::after {
         content: '';
@@ -23,7 +23,7 @@
     .tagline {
         margin-bottom: 12px;
     }
-    h2 {
+    h2,h3 {
         color: #1A1A1A;
         margin-bottom: 32px;
     }
