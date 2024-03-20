@@ -1,257 +1,319 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Begê Soluções</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/img/favicon/site.webmanifest">
-    <link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="row align-items-center justify-content-between">
-          <div class="col-md-2">
-            <a href="#home"><img src="assets/img/logo.png" alt=""></a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Begê Soluções</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md-12 menu-content">
+          <a href="#home"><img src="assets/img/logo.png" alt=""></a>        
+          <nav>
+            <ul>
+              <li><a href="#sobre">Sobre</a></li>
+              <!-- <li><a href="#solucoes">Soluções</a></li> -->
+              <li><a href="#servicos">Serviços</a></li>
+              <li><a href="#portfolio">Portfólio</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </nav>
+          <div class="navbar">
+            <div class="nav-container">
+              <input class="checkbox" type="checkbox" name="" id="checkboxMenu"  onchange="verificarSelecionado()" />
+              <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+              </div>
+            </div>
           </div>
-          <div class="col-md-7">
-            <nav>
-              <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <!-- <li><a href="#solucoes">Soluções</a></li> -->
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#contato">Contato</a></li>
-              </ul>
-            </nav>
+        </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="div-menu" id="divMenu">
+      <ul>
+        <li class="menu-mobile"><a href="#sobre">Sobre</a></li>
+        <!-- <li><a href="#solucoes">Soluções</a></li> -->
+        <li class="menu-mobile"><a href="#servicos">Serviços</a></li>
+        <li class="menu-mobile"><a href="#portfolio">Portfólio</a></li>
+        <li class="menu-mobile"><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <h1>Bem-vindo<br> à <span>Begê</span></h1>
+            <p>Transformando ideias em experiências digitais extraordinárias. Descubra como podemos impulsionar sua
+              presença online hoje.</p>
+            <a class="btn mt-5" href="#sobre">Conhecer</a>
           </div>
         </div>
       </div>
-    </header>
-    <main>
-      <section class="hero" id="home">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-5">
-              <h1>Bem-vindo<br> à <span>Begê</span></h1>
-              <p>Transformando ideias em experiências digitais extraordinárias. Descubra como podemos impulsionar sua presença online hoje.</p>
-              <a class="btn mt-5" href="#sobre">Conhecer</a>
-            </div>
+    </section>
+
+    <section class="about" id="sobre">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-md-5 offset-md-1">
+            <img class="img-fluid" src="assets/img/about.png" alt="">
+          </div>
+          <div class="col-md-6">
+            <p class="tagline">Sobre</p>
+            <h2>Olá, somos a <br> Begê Soluções!</h2>
+            <p class="font-text-lg">Da concepção à excelência digital: criando o futuro da sua marca online.</p>
+            <p class="font-text-xs">Somos uma equipe apaixonada e criativa dedicada a transformar ideias em experiências
+              digitais extraordinárias. Na era digital em constante evolução, somos especialistas em desenvolvimento de
+              sites com foco em e-commerce e aplicativos, atuando desde o conceito até a operação do seu produto. Um
+              site bem projetado é a chave para destacar sua marca e alcançar seu público-alvo de forma impactante.</p>
           </div>
         </div>
-      </section>
-      <section class="about" id="sobre">
-        <div class="container-fluid">
-          <div class="row align-items-center">
-            <div class="col-md-5 offset-md-1">
-              <img class="img-fluid" src="assets/img/about.png" alt="">
-            </div>
-            <div class="col-md-6">
-              <p class="tagline">Sobre</p>
-              <h2>Olá, somos a <br> Begê Soluções!</h2>
-              <p class="font-text-lg">Da concepção à excelência digital: criando o futuro da sua marca online.</p>
-              <p class="font-text-xs">Somos uma equipe apaixonada e criativa dedicada a transformar ideias em experiências digitais extraordinárias. Na era digital em constante evolução, um site bem projetado é a chave para destacar sua marca e alcançar seu público-alvo de forma impactante.</p>
-            </div>
+      </div>
+    </section>
+
+    <section class="services" id="servicos">
+      <div class="container">
+        <div class="row align-items-xxl-center">
+          <div class="col-lg-4 mb-4">
+            <p class="tagline">Impulsionando sua presença online.</p>
+            <h2>Descubra Nossos <br><span class="color-2">Serviços Digitais</span></h2>
+            <p>Na Begê, oferecemos uma gama abrangente de serviços para atender às suas necessidades digitais. Nossa
+              equipe especializada está pronta para transformar sua visão em realidade, utilizando as mais recentes
+              tecnologias e estratégias de design. Aqui está uma visão geral dos serviços que oferecemos:</p>
           </div>
-        </div>
-      </section>
-      <section class="services" id="servicos">
-        <div class="container">
-          <div class="row align-items-xxl-center">
-            <div class="col-md-4">
-              <p class="tagline">Impulsionando sua presença online.</p>
-              <h2>Descubra Nossos <br><span class="color-2">Serviços Digitais</span></h2>
-              <p>Na Begê, oferecemos uma gama abrangente de serviços para atender às suas necessidades digitais. Nossa equipe especializada está pronta para transformar sua visão em realidade, utilizando as mais recentes tecnologias e estratégias de design. Aqui está uma visão geral dos serviços que oferecemos:</p>
-            </div>
-            <div class="col-md-8">
-              <div class="cards">
-                <div class="service-card">
-                  <div class="text">
-                    <h3 class="font-text-lg">Design de Sites Personalizados</h3>
-                    <p>Criamos sites que são uma extensão autêntica da sua marca, desde o layout até a experiência do usuário, garantindo uma presença online cativante e única.</p>
-                  </div>
-                  <div class="icon">
-                    <img src="assets/img/card-icon-1.png" alt="">
-                  </div>
+          <div class="col-lg-8">
+            <div class="cards row justify-content-center">
+              <div class="service-card col-md-5">
+                <div class="text">
+                  <h3 class="font-text-lg">Design de Sites Personalizados</h3>
+                  <p>Criamos sites que são uma extensão autêntica da sua marca, desde o layout até a experiência do
+                    usuário, garantindo uma presença online cativante e única.</p>
                 </div>
-                <div class="service-card">
-                  <div class="text">
-                    <h3 class="font-text-lg">Desenvolvimento Web Profissional</h3>
-                    <p>Nossa equipe de desenvolvedores experientes utiliza as melhores práticas de codificação para garantir que seu site seja robusto, seguro e compatível com dispositivos móveis.</p>
-                  </div>
-                  <div class="icon">
+                <!-- <div class="icon">
                     <img src="assets/img/card-icon-1.png" alt="">
-                  </div>
+                  </div> -->
+              </div>
+              <div class="service-card col-md-5">
+                <div class="text">
+                  <h3 class="font-text-lg">Desenvolvimento Web Profissional</h3>
+                  <p>Nossa equipe de desenvolvedores experientes utiliza as melhores práticas de codificação para
+                    garantir que seu site seja robusto, seguro e compatível com dispositivos móveis.</p>
                 </div>
-                <div class="service-card">
-                  <div class="text">
-                    <h3 class="font-text-lg">Manutenção e Suporte Contínuo</h3>
-                    <p>Fornecemos serviços de manutenção e suporte contínuos para garantir que seu site permaneça seguro, funcional e atualizado com as últimas tendências digitais.</p>
-                  </div>
-                  <div class="icon">
+                <!-- <div class="icon">
                     <img src="assets/img/card-icon-1.png" alt="">
-                  </div>
+                  </div> -->
+              </div>
+              <div class="service-card col-md-5">
+                <div class="text">
+                  <h3 class="font-text-lg">Manutenção e Suporte Contínuo</h3>
+                  <p>Fornecemos serviços de manutenção e suporte contínuos para garantir que seu site permaneça seguro,
+                    funcional e atualizado com as últimas tendências digitais.</p>
                 </div>
-                <div class="service-card">
-                  <div class="text">
-                    <h3 class="font-text-lg">Consultoria em Estratégia Digital</h3>
-                    <p>Oferecemos orientação especializada para ajudá-lo a desenvolver uma estratégia digital sólida, alinhada aos seus objetivos de negócios e maximizando o retorno sobre o investimento.</p>
-                  </div>
-                  <div class="icon">
+                <!-- <div class="icon">
                     <img src="assets/img/card-icon-1.png" alt="">
-                  </div>
+                  </div> -->
+              </div>
+              <div class="service-card col-md-5">
+                <div class="text">
+                  <h3 class="font-text-lg">Consultoria em Estratégia Digital</h3>
+                  <p>Oferecemos orientação especializada para ajudá-lo a desenvolver uma estratégia digital sólida,
+                    alinhada aos seus objetivos de negócios e maximizando o retorno sobre o investimento.</p>
                 </div>
+                <!-- <div class="icon">
+                    <img src="assets/img/card-icon-1.png" alt="">
+                  </div> -->
               </div>
             </div>
           </div>
         </div>
-        <div class="container">
-          <div class="row justify-content-center mt-5">
-            <div class="col-md-6 col-xxl-8 text-center">
-              <h3>Transformando sua visão em realidade digital</h3>
-              <p>Nossos serviços são adaptados às suas necessidades específicas, visando não apenas atender, mas superar suas expectativas. Entre em contato conosco hoje para descobrir como podemos impulsionar sua presença online e levar sua marca para o próximo nível!</p>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-8 col-xxl-8 text-center">
+            <h3>Transformando sua visão em realidade digital</h3>
+            <p>Nossos serviços são adaptados às suas necessidades específicas, visando não apenas atender, mas superar
+              suas expectativas. Entre em contato conosco hoje para descobrir como podemos impulsionar sua presença
+              online e levar sua marca para o próximo nível!</p>
+          </div>
+        </div>
+        <div class="row mt-5 justify-content-center container-mini-card">
+          <div class="col-md-lg mini-card">
+            <div class="icon">
+              <img src="assets/img/icon-1.png" alt="">
+            </div>
+            <div class="text">
+              <p><strong>Experiência Profissional:</strong> Equipe experiente e qualificada para lidar com seu projeto.
+              </p>
             </div>
           </div>
-          <div class="row mt-5">
-            <div class="col-md-4">
-              <div class="mini-card">
-                <div class="icon">
-                  <img src="assets/img/icon-1.png" alt="">
-                </div>
-                <div class="text">
-                  <p><strong>Experiência Profissional:</strong> Equipe experiente e qualificada para lidar com seu projeto.</p>
-                </div>
-              </div>
+
+          <div class="col-md-lg mini-card">
+            <div class="icon">
+              <img src="assets/img/icon-1.png" alt="">
             </div>
-            <div class="col-md-4">
-              <div class="mini-card">
-                <div class="icon">
-                  <img src="assets/img/icon-1.png" alt="">
-                </div>
-                <div class="text">
-                  <p><strong>Personalização Sob Medida:</strong> Soluções adaptadas às suas necessidades específicas.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="mini-card">
-                <div class="icon">
-                  <img src="assets/img/icon-1.png" alt="">
-                </div>
-                <div class="text">
-                  <p><strong>Excelência em Design:</strong> Compromisso com um design visualmente impressionante e coeso com sua marca.</p>
-                </div>
-              </div>
+            <div class="text">
+              <p><strong>Personalização Sob Medida:</strong> Soluções adaptadas às suas necessidades específicas.</p>
             </div>
           </div>
-          <div class="row mt-4">
-            
-            <div class="col-md-4">
-              <div class="mini-card">
-                <div class="icon">
-                  <img src="assets/img/icon-1.png" alt="">
-                </div>
-                <div class="text">
-                  <p><strong>Foco no Cliente:</strong> Atendimento centrado no cliente, ouvindo suas ideias e garantindo sua satisfação.</p>
-                </div>
-              </div>
+
+          <div class="col-md-lg mini-card">
+            <div class="icon">
+              <img src="assets/img/icon-1.png" alt="">
             </div>
-            <div class="col-md-4">
-              <div class="mini-card">
-                <div class="icon">
-                  <img src="assets/img/icon-1.png" alt="">
-                </div>
-                <div class="text">
-                  <p><strong>Resultados Mensuráveis:</strong> Estratégias de marketing digital comprovadas para impulsionar resultados tangíveis.</p>
-                </div>
-              </div>
+            <div class="text">
+              <p><strong>Excelência em Design:</strong> Compromisso com um design visualmente impressionante e coeso com
+                sua marca.</p>
             </div>
-            <div class="col-md-4">
-              <div class="mini-card">
-                <div class="icon">
-                  <img src="assets/img/icon-1.png" alt="">
-                </div>
-                <div class="text">
-                  <p><strong>Suporte Contínuo:</strong> Compromisso de suporte contínuo, atualizações e crescimento a longo prazo.</p>
-                </div>
-              </div>
+          </div>
+
+          <div class="col-md-lg mini-card">
+            <div class="icon">
+              <img src="assets/img/icon-1.png" alt="">
+            </div>
+            <div class="text">
+              <p><strong>Foco no Cliente:</strong> Atendimento centrado no cliente, ouvindo suas ideias e garantindo sua
+                satisfação.</p>
+            </div>
+          </div>
+
+          <div class="col-md-lg mini-card">
+            <div class="icon">
+              <img src="assets/img/icon-1.png" alt="">
+            </div>
+            <div class="text">
+              <p><strong>Resultados Mensuráveis:</strong> Estratégias de marketing digital comprovadas para impulsionar
+                resultados tangíveis.</p>
+            </div>
+          </div>
+
+          <div class="col-md-lg mini-card">
+            <div class="icon">
+              <img src="assets/img/icon-1.png" alt="">
+            </div>
+            <div class="text">
+              <p><strong>Suporte Contínuo:</strong> Compromisso de suporte contínuo, atualizações e crescimento a longo
+                prazo.</p>
             </div>
           </div>
         </div>
-      </section>
-      <section class="portfolio" id="portfolio">
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="container">
-                <div class="row align-items-center">
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="container">
+              <div class="row align-items-center">
                 <div class="col-md-4">
                   <p class="tagline">Works</p>
                   <h2>My portfólio</h2>
-                  <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and !</p>
+                  <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                    born and !</p>
                   <button>View full</button>
                 </div>
                 <div class="col-md-8">
                   <img src="assets/img/portfolio-1.png" alt="">
                 </div>
               </div>
-              </div>
             </div>
-            <div class="swiper-slide">
-              <div class="container">
-                <div class="row align-items-center">
+          </div>
+          <div class="swiper-slide">
+            <div class="container">
+              <div class="row align-items-center">
                 <div class="col-md-4">
                   <p class="tagline">Works</p>
                   <h2>My portfólio</h2>
-                  <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and !</p>
+                  <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                    born and !</p>
                   <button>View full</button>
                 </div>
                 <div class="col-md-8">
                   <img src="assets/img/portfolio-1.png" alt="">
                 </div>
               </div>
-              </div>
             </div>
-            <div class="swiper-slide">
-              <div class="container">
-                <div class="row align-items-center">
+          </div>
+          <div class="swiper-slide">
+            <div class="container">
+              <div class="row align-items-center">
                 <div class="col-md-4">
                   <p class="tagline">Works</p>
                   <h2>My portfólio</h2>
-                  <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and !</p>
+                  <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                    born and !</p>
                   <button>View full</button>
                 </div>
                 <div class="col-md-8">
                   <img src="assets/img/portfolio-1.png" alt="">
                 </div>
               </div>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-pagination"></div>
-          <div class="swiper-arrow swiper-button-prev"></div>
-          <div class="swiper-arrow swiper-button-next"></div>
-        </div>
-      </section>
-      <section class="contact" id="contato">
-        <div class="container">
-          <div class="row">
-            <div class="col text-center">
-              <h2>Juntos, vamos construir <br> algo incrível!</h2>
-              <a class="btn mt-5" href="https://wa.me/5511948470298" target="_blank">Entre em contato!</a>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-    <footer class="text-center py-4">
-      <p class="mb-0">Begê Soluções® - todos os direitos reservados 2024.</p>
-    </footer>
-    <script type="module" src="/main.js"></script>
-  </body>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-arrow swiper-button-prev"></div>
+        <div class="swiper-arrow swiper-button-next"></div>
+      </div>
+    </section>
+
+    <section class="contact" id="contato">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h2>Juntos, vamos construir <br> algo incrível!</h2>
+            <a class="btn mt-5" href="https://wa.me/5511948470298" target="_blank">Entre em contato!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center py-4">
+    <p class="mb-0">Begê Soluções® - todos os direitos reservados 2024.</p>
+  </footer>
+  <script type="module" src="/main.js"></script>
+  <script>
+      var checkbox = document.getElementById("checkboxMenu");
+      var menu = document.getElementById('divMenu')
+      function verificarSelecionado() {
+
+        if(menu){
+          if (checkbox.checked) {
+            menu.style.display = "flex";
+          } else {
+            menu.style.display = "none";
+          }
+        }
+      }
+      document.addEventListener("DOMContentLoaded", function() {
+        var menuMobiles = document.querySelectorAll(".menu-mobile");
+        menuMobiles.forEach(function(menuMobile) {
+          menuMobile.addEventListener("click", function() {
+            menu.style.display = "none";
+            document.getElementById('checkboxMenu').checked = false;
+          });
+        });
+      });
+  </script>
+</body>
+
 </html>

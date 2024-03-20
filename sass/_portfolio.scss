@@ -13,6 +13,16 @@
         .container {
             width: 100%;
         }
+
+        img{
+            width: 100%;
+        }
+
+        @media screen and (max-width:768px){
+            img{
+                margin-top: 60px;
+            }
+        }
     }
 
     .swiper-arrow {
@@ -52,6 +62,11 @@
         }
         &.swiper-button-next {
             right: 30px;
+        }
+
+        @media screen and (max-width:768px){
+            top: initial;
+            bottom: 0;
         }
     }
 }

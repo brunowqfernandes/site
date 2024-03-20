@@ -1,15 +1,12 @@
 .service-card {
     background: radial-gradient(circle at 87% 93%, $color-gradient-1 0%, $color-gradient-2 100%);
-    color: #fff;
-    padding: 40px 0 0 40px;
-    display: flex;
-    flex-direction: column;
+    color: #fff;   
     box-shadow: 0 7px 25px rgba($color-shadow, .78);
+    padding: 20px;
     .text {
         margin-bottom: 12px;
         font-family: $font-abc-book;
         font-size: $font-text-xs;
-        padding-right: 40px;
     }
     h3 {
         margin-bottom: 28px;
@@ -22,48 +19,34 @@
 }
 
 .cards {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 1040px;
     gap: 32px;
     .service-card {
         max-width: 330px;
-        &:first-child {
-            @media (min-width: 1600px) {
-                margin-top: 80px;
-            }
-        }
-        &:nth-child(3) {
-            @media (max-width: 1600px) {
-                margin-top: 80px;
-            }
-        }
-        &:last-child {
-            @media (min-width: 1600px) {
-                margin-bottom: 80px;
-            }
+    }
+}
+.container-mini-card{
+    gap: 10px;
+    .mini-card {
+        background: radial-gradient(circle at 13% 80%, $color-gradient-1 0%, $color-gradient-2 100%);
+        display: flex;
+        padding: 24px;
+        color: #fff;
+        align-items: center;
+        max-width: 430px;
+        min-height: 155px;
+        .icon {
+            align-items: center;
+            border-radius: 4px;
+            background-color: $color-primary;
+            display: flex;
+            height: inherit;
+            justify-content: center;
+            flex-shrink: 0;
+            width: 64px;
+            height: 64px;
+            margin-right: 20px;
         }
     }
 }
 
-.mini-card {
-    background: radial-gradient(circle at 13% 80%, $color-gradient-1 0%, $color-gradient-2 100%);
-    display: flex;
-    padding: 24px;
-    color: #fff;
-    gap: 15px;
-    align-items: center;
-    height: 100%;
-    .icon {
-        align-items: center;
-        border-radius: 4px;
-        background-color: $color-primary;
-        display: flex;
-        height: inherit;
-        justify-content: center;
-        flex-shrink: 0;
-        width: 64px;
-        height: 64px;
-    }
-}
+    

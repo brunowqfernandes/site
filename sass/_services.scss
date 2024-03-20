@@ -3,6 +3,11 @@
     color: #1A1A1A;
     padding: 128px 0 128px;
     position: relative;
+
+    .font-text-lg{
+        color: #fff;
+    }
+
     &::before, &::after {
         content: '';
         width: 100%;

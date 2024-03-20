@@ -1,11 +1,16 @@
+html{
+    overflow-x: hidden !important;
+}
+
 body {
     background-color: #010101;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     margin: 0;
     padding: 0;
     font-family: $font-abc;
     color: #fff;
     line-height: 1.5;
+    position: relative;
 
     * {
         box-sizing: border-box;

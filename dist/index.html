@@ -1,185 +1,321 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-    <script type="module" crossorigin src="/assets/index-8430d03d.js"></script>
-    <link rel="stylesheet" href="/assets/index-e9ddf2d9.css">
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div class="row align-items-center justify-content-between">
-          <div class="col-md-2">
-            <img src="data:image/png;base64,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" alt="">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Begê Soluções</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon-975e04d3.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QA/wD/AP+gvaeTAAAAB3RJTUUH6AIXFw0sH9KoUgAACFxJREFUWMOll3lwltUVxn/n3vf9luwBAl+AhE3EBcImiIAbTrWKndJplVq1orUqWnVsnUqX0RmmU+3YdtqObcW2Wm2ddrSto2KrSAURZROqCaiAISYQTCBsJvm2933v6R9fCAlBZNo7c/95l3ue89znPOde4bPGy/cDTsCmgDmgFyJMAWqAUkCALqAV5V2QNcBacHtAHJ9fetLl5VPfvPIjwAi400C/BizAMAFIEkZILkCCCAD1LBr3wbcAORyNwIsgfwZ5D3Bc9oNTBLBiCehggDLQGxG9E2GsZHLiNe8j9sFuvOZ92ANdSDZfABD3iSpLCGurCM4YSTAmhRYnQNmNsgzMo8AByMBl958EwCu/ABGAceAeQmSBZHNe7D87Sa5+B79xL9KdQ1RROQ67KoigyRjB6BTZC+vIzTgDLU46nK4A811wDWDg0rtPAGDFo0cfTQK3DMN5XksbRf9YRXzLdiQfgJiTbVoPEEAd6nnkJ42l+8vzCMfVgFIP5lZw6wsgbu0DYMUfQCwgp0H0JCKz/frtlDz5PN6e9gIrnxW4DxG92TlHNGwwXdddSX5mHUADmOuBdwH43CJM4ctSoKgMYg9ikrP9+iZKlz2L3d2GihSS0lOb/cAYg2k/QMnvnyO24X2Q5CSIPwxFQyEJgGXlC0AGJLEY499lW9pNyaNPYT/ehxpzammfbIggmSx+Ywvh+PG4qmFjUZPFVKzm61/BgA8y6HQkfodk1Sv623Ls7r2fHrzIh5gd+Ny3UBw78VYZg9m3n6JnXkS68oKJ34wG08DDgAOJXYNJnBbb0kDs7S2F8i8Q32+60RV0fe98MjdNg9JYD+cKRR7ZG6bS+dPLiSYOO+G/GIO/dRvxNzeBJKqR2A2YQcazUjHciS6QTIb4a6sglwN7XIaquNGVdN11LsG5IyACjVmSj29GjmQJzqslfdtMtDyBG1pMyQMrsQ1tHCcJJIqIr3qd/OyL0LLyK0TDX5vB4s0ebOKnVzS14O3YURCdar8Z1VbQdedMgunV4ADfkFk4kcw3pqOlcaT1E0zLYXBKOLmarqWXEk5MDVClimCbm6jYvpPBNlE7RPx5duSi2xcXGW8Oq1eSf3v9USPqrVFXW0H3nTMJzqkGY7Ctn5B85j3c4CLyF45GY5bYql14DW2EddVoVTGuuozo7BTetjakras/DUFAclAVFVNn2SQmbZLGm5KIFG1qRNUd2zNVoppyum8/h2BaChSkM0dy2dvE/1qPbToEviV77WQyt8zA7Ogg+fAa5EAaFMJpI+j+8eVEk1KoumOMoriPGonnA5LGqzPW2JEmyBN2tPej3dWUkV48vTc4RvA278Vbv5vclRMI5o6CSAsgrp9C7upJeOub8V/dWaAucoTTR5J+6AqiidU96zpUITrYgclmsdZWGzFSpmFAlE6jCs4pVCZxN08lmJrq4zJgt3egQP7iMWiR38sUcY/8FRNwCQ/vjY8gHx0DMaOGzEPzcSPKUac4VaJMBg1yiDElXmAhMvRmjlPwBMrjhUX66Eh9g0YRdOYG1rpT1DnoykLk6GsIGrOooVeUqkoogAGTNtqVSXhoMlEAgBK1d+GWbcbuOgRWehUZnTUUNeC/vAPpzvcIViAX4r28HTpzRJOHQ8IrBLMGU/8x8SXLoflgT59yaDxOJumTti5t9tmwdX9RjPyQIYUuBqhTpKGd+K82YBoPgTXglKguRTB3NPb1Jvyn34EgAk+wm/bg/b2BcM5o8gsnF0BZg2n4mPi9L2A2NKOuR1/OEQ6qpKMsyT4Ttdnc7bfMyMXMOXzUhNm8pU8ZKtLejW06jJtQhVYVQ8wjOqMKs+sQ3is7wBpcXTVYg5bGyd8yCx1VWQi+rY3YfcuxG1v6GZI4R3D+HNIXzSUnbo3ljpvL8JiPhp597XUI8n2tA2nvxDQdwp1ZhQ4phrIE0eThmG3t2H99AJ7FXTAWd94oqCwCY5D32okteQm7saUgIqFXsOr7hNctRE8fE4F7zOCFazH5RjdxHNGZ49EoGuCE8s5e/IffQHYeACNoqoSothw+yeL9dh3eE5sgF4IVZFsb/pLlyIZmnDpcT2U5By6KcGNqcdPPApPfgxf+2/LA/CPk4zUU+3NRh6zZWBDK8X2+rRPTeBAdWY5Z+SH22Xo0F0IuxNTvBWMgcvhLX0U2tgysEi205vDGq3AXTAOiZ1H5o7BrJcBEDC/R2V3rffsnmNc2DGxIR725MgGZEDJBn1LTgvKTPhzOMqALAUQROmMi4SM/RIdUduBYgPCmwYaw7pKtmPxjDIq56J6r0VEpiKKBLVUVDqQhHfRJqydaJoSD6WMtuu90ETq0kvCehejwEjC5PyG6HhP2pND6PMAQxD2FkcvNP9dhv/872H+4QO3/M5xCWRHRA4twC+cBvIUzXwV2M+KLPWdCPwdergMb3ofJ1bsvTCN6cBFaU9Xjav/jiBwMLSdaeh3umjlg842Y4F787G68fO+uFkbH0yAO1MxC3GMYJsmmD7E/eQ5Z+37BdOwpshG5gjfMGEd035fQ888GaMTJYkz0Ks6DIdceBwDg0ONH1VYH7mdYmcfBLmOe24T5y1vItlZI9/iEOcHFRIGEj05I4a6ehbtqFgwrV5yuR+U74NaBgcqben8beIQ88hvAA2Uo4r6F4ZsYSbG/E9m4C7N2B7K1FdqOFMAoBfUPK0PPGo7OGY+bNQ5S5aAcwPEUmJ8De8BB+W39wn36daPzEQpXIZ2CsAhhPlZqcc4jnYfOLJIJCu6WiEFpHIrjYE2E01YcK1CeANkIhJTeccIwn33f6f4loBYYB1yC6MUIdYgMB4p7vkqj2oayFZXVwEpgO0hI8d0nXf6/l4EJNKkr7cQAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjQtMDItMjNUMjM6MTM6NDQrMDA6MDDfZTF/AAAAJXRFWHRkYXRlOm1vZGlmeQAyMDI0LTAyLTIzVDIzOjEzOjQ0KzAwOjAwrjiJwwAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAABXelRYdFJhdyBwcm9maWxlIHR5cGUgaXB0YwAAeJzj8gwIcVYoKMpPy8xJ5VIAAyMLLmMLEyMTS5MUAxMgRIA0w2QDI7NUIMvY1MjEzMQcxAfLgEigSi4A6hcRdPJCNZUAAAAASUVORK5CYII=">
+  <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACslBMVEUAAAAAvIcAvIgAuW8AvZQAuX4Au6EAvKEA6qsA66sA9ZEA86IA9KIA85YA+JgA+JkAu4cAwIkAvIQBsXsCp3QCp3QBsHsAu4QAwIkAu4cAvZUAvJADoHgEnXYAvJAAvpUAvqUAuZsHgWoHfWYAuJoAv6UAv70Avq8HgXQAva4Av7kAxMMDoZ4EnZoAw8IOwcoNwMgpt8YptMIvr78uq7oms74lr7kJxMUJwMEA2MsA18oA5McBuZ4Bs5kA5McA4sAA5rUA5bQA5L4A7q8A6KUClmcA5qQA7q8A9KMA8p4Bxn4Bw3wA8Z0A9KMA9pcA/ZsA95QA5YgB1X4B1X4A5IcA9pQA/ZoA95gLa1AQQjITMSYTMCYQQDELaE4SLiYWFBMWExIVFBMVExISKyQSHhwUEhEUExMUERIUEhISHBoHfHAQLCsTERETEhISJBsOUDISHBcTGxcOVTUSKB4RKCcNa24SERASERERIRkHjU8Bz3EKekcQOyYDy3IHpmARJhwSEBASEA8OZGcXQEMRDQwQHxcHiEwByGwIe0YDu2gIgksKbEAB5IEGpmEPJRsQDQwWOTwVLC0PFhAJgUcAzm4En1cKXDYB1XYB3XsKYjoFqmIA940OGxMUJicRKiwNFg8HiUoAz24DoVgJVzMB1XUA3XsIXjcFol0A+I0EqWIMGRIQJCYKPj0LBwcKHxQDkE4Ay24HZzoFfEYCwmwGg0sB4X8DqWEKIxcLBwYKNzYFcGgJBwUJBwcIHhIDlVEBwGkHOCEEeEQA4X4Dpl4IIBQJBwYJBgQFaGAGJB4HBAQHBQUGHhIETiwGEQsGEAsEUi8GIBQHBAUGBAQGHxoCk3EFEQ0GAwMFBQQFBAQFAwMFDgsCjGsEIhcFAgIEHxUCkGMDd0oEPSYEJRcEOyUDdEj///9+sbrNAAAAWHRSTlMAAAAAAAAAAAAAAAAAAAAABD2a2fP0255BBRKF6euLFRKk/f6sFgOF/o4FPufsR5ql2eLz+/P72uSdqULq7ksEi5QGFaz+sxkWju3vlBkGRqbj+/zlqUoHd/XcyQAAAAFiS0dE5VhlC78AAAAHdElNRQfoAhcXDSwf0qhSAAABG0lEQVQY0wEQAe/+AAAAARAREhMUFRYXGBkCAAAAAwQaGxxYWVpbXF0dHh8EBQAGICEiXl9gYWFgYmMjJCUHACYnKGRlZmdmZmdoaGlqKSoAKyxrbG1ub3BxcnNsbHQtLgAvdXZ3eHl6e3x9fn+AgYIwADGDhIWGh4iJiouMjY6PkDIAM5GSk5SVlpeYmZqbjZydNAA1np+goaKjpKWmp6ipqqs2ADesra6vsLGys7S1tre4uTgAObq7vL2+v8DBwsPExcbHOgA7PMjJysvMzc7P0NHS0z0+AD9A1NXW0tbX19bY2drbQUIACENERdzd3dnZ3d3e30ZHCQAKC0hJSuDh4uLj5EtMTQwNAAAADk5PUFFSU1RVVlcPAADZA3JAizIyMQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyNC0wMi0yM1QyMzoxMzo0NCswMDowMN9lMX8AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjQtMDItMjNUMjM6MTM6NDQrMDA6MDCuOInDAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg==">
+  <link rel="manifest" href="data:application/manifest+json;base64,ew0KICAgICJuYW1lIjogIiIsDQogICAgInNob3J0X25hbWUiOiAiIiwNCiAgICAiaWNvbnMiOiBbDQogICAgICAgIHsNCiAgICAgICAgICAgICJzcmMiOiAiL2FuZHJvaWQtY2hyb21lLTE5MngxOTIucG5nIiwNCiAgICAgICAgICAgICJzaXplcyI6ICIxOTJ4MTkyIiwNCiAgICAgICAgICAgICJ0eXBlIjogImltYWdlL3BuZyINCiAgICAgICAgfSwNCiAgICAgICAgew0KICAgICAgICAgICAgInNyYyI6ICIvYW5kcm9pZC1jaHJvbWUtNTEyeDUxMi5wbmciLA0KICAgICAgICAgICAgInNpemVzIjogIjUxMng1MTIiLA0KICAgICAgICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIg0KICAgICAgICB9DQogICAgXSwNCiAgICAidGhlbWVfY29sb3IiOiAiI2ZmZmZmZiIsDQogICAgImJhY2tncm91bmRfY29sb3IiOiAiI2ZmZmZmZiIsDQogICAgImRpc3BsYXkiOiAic3RhbmRhbG9uZSINCn0NCg==">
+  <link rel="mask-icon" href="/assets/safari-pinned-tab-ab02b57b.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <script type="module" crossorigin src="/assets/index-fcbf71bd.js"></script>
+  <link rel="stylesheet" href="/assets/index-6ba9a0d7.css">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-md-12 menu-content">
+          <a href="#home"><img src="data:image/png;base64,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" alt=""></a>        
+          <nav>
+            <ul>
+              <li><a href="#sobre">Sobre</a></li>
+              <!-- <li><a href="#solucoes">Soluções</a></li> -->
+              <li><a href="#servicos">Serviços</a></li>
+              <li><a href="#portfolio">Portfólio</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </nav>
+          <div class="navbar">
+            <div class="nav-container">
+              <input class="checkbox" type="checkbox" name="" id="checkboxMenu"  onchange="verificarSelecionado()" />
+              <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+              </div>
+            </div>
           </div>
-          <div class="col-md-7">
-            <nav>
-              <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#solucoes">Soluções</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#portfolio">Portfólio</a></li>
-                <li><a href="#contato">Contato</a></li>
-              </ul>
-            </nav>
+        </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="div-menu" id="divMenu">
+      <ul>
+        <li class="menu-mobile"><a href="#sobre">Sobre</a></li>
+        <!-- <li><a href="#solucoes">Soluções</a></li> -->
+        <li class="menu-mobile"><a href="#servicos">Serviços</a></li>
+        <li class="menu-mobile"><a href="#portfolio">Portfólio</a></li>
+        <li class="menu-mobile"><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <h1>Bem-vindo<br> à <span>Begê</span></h1>
+            <p>Transformando ideias em experiências digitais extraordinárias. Descubra como podemos impulsionar sua
+              presença online hoje.</p>
+            <a class="btn mt-5" href="#sobre">Conhecer</a>
           </div>
         </div>
       </div>
-    </header>
-    <main>
-      <section class="hero">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-5">
-              <h1>A new way <br>of doing it <span>appears</span></h1>
-              <p>Sed ut perspiciatis unde omnis iste <br> natus error sit voluptatem</p>
-              <button>Call to action</button>
-            </div>
+    </section>
+
+    <section class="about" id="sobre">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-md-5 offset-md-1">
+            <img class="img-fluid" src="/assets/about-b40ed816.png" alt="">
+          </div>
+          <div class="col-md-6">
+            <p class="tagline">Sobre</p>
+            <h2>Olá, somos a <br> Begê Soluções!</h2>
+            <p class="font-text-lg">Da concepção à excelência digital: criando o futuro da sua marca online.</p>
+            <p class="font-text-xs">Somos uma equipe apaixonada e criativa dedicada a transformar ideias em experiências
+              digitais extraordinárias. Na era digital em constante evolução, somos especialistas em desenvolvimento de
+              sites com foco em e-commerce e aplicativos, atuando desde o conceito até a operação do seu produto. Um
+              site bem projetado é a chave para destacar sua marca e alcançar seu público-alvo de forma impactante.</p>
           </div>
         </div>
-      </section>
-      <section class="about">
-        <div class="container-fluid">
-          <div class="row align-items-center">
-            <div class="col-md-5 offset-md-1">
-              <img src="/assets/about-b40ed816.png" alt="">
-            </div>
-            <div class="col-md-3">
-              <p class="tagline">Sobre</p>
-              <h2>The quick, brown fox jumps over a</h2>
-              <p class="font-text-lg">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and !</p>
-              <p class="font-text-xs">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a</p>
-            </div>
+      </div>
+    </section>
+
+    <section class="services" id="servicos">
+      <div class="container">
+        <div class="row align-items-xxl-center">
+          <div class="col-lg-4 mb-4">
+            <p class="tagline">Impulsionando sua presença online.</p>
+            <h2>Descubra Nossos <br><span class="color-2">Serviços Digitais</span></h2>
+            <p>Na Begê, oferecemos uma gama abrangente de serviços para atender às suas necessidades digitais. Nossa
+              equipe especializada está pronta para transformar sua visão em realidade, utilizando as mais recentes
+              tecnologias e estratégias de design. Aqui está uma visão geral dos serviços que oferecemos:</p>
           </div>
-        </div>
-      </section>
-      <section class="services">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-4">
-              <p class="tagline">Serviços</p>
-              <h2>Our development and <span class="color-2">services</span></h2>
-              <p>These are the main services we offer for you and your company. We have more to offer in terms of services</p>
-            </div>
-            <div class="col-md-6">
-              <div class="cards">
-                <div class="service-card">
-                  <div class="text">
-                    <h3 class="font-text-lg">Business idea planning</h3>
-                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and !</p>
-                  </div>
-                  <div class="icon">
-                    <img src="/assets/card-icon-1-6259a26c.png" alt="">
-                  </div>
+          <div class="col-lg-8">
+            <div class="cards row justify-content-center">
+              <div class="service-card col-md-5">
+                <div class="text">
+                  <h3 class="font-text-lg">Design de Sites Personalizados</h3>
+                  <p>Criamos sites que são uma extensão autêntica da sua marca, desde o layout até a experiência do
+                    usuário, garantindo uma presença online cativante e única.</p>
                 </div>
-                <div class="service-card">
-                  <div class="text">
-                    <h3 class="font-text-lg">Business idea planning</h3>
-                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and !</p>
-                  </div>
-                  <div class="icon">
-                    <img src="/assets/card-icon-1-6259a26c.png" alt="">
-                  </div>
+                <!-- <div class="icon">
+                    <img src="assets/img/card-icon-1.png" alt="">
+                  </div> -->
+              </div>
+              <div class="service-card col-md-5">
+                <div class="text">
+                  <h3 class="font-text-lg">Desenvolvimento Web Profissional</h3>
+                  <p>Nossa equipe de desenvolvedores experientes utiliza as melhores práticas de codificação para
+                    garantir que seu site seja robusto, seguro e compatível com dispositivos móveis.</p>
                 </div>
-                <div class="service-card">
-                  <div class="text">
-                    <h3 class="font-text-lg">Business idea planning</h3>
-                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and !</p>
-                  </div>
-                  <div class="icon">
-                    <img src="/assets/card-icon-1-6259a26c.png" alt="">
-                  </div>
+                <!-- <div class="icon">
+                    <img src="assets/img/card-icon-1.png" alt="">
+                  </div> -->
+              </div>
+              <div class="service-card col-md-5">
+                <div class="text">
+                  <h3 class="font-text-lg">Manutenção e Suporte Contínuo</h3>
+                  <p>Fornecemos serviços de manutenção e suporte contínuos para garantir que seu site permaneça seguro,
+                    funcional e atualizado com as últimas tendências digitais.</p>
                 </div>
-                <div class="service-card">
-                  <div class="text">
-                    <h3 class="font-text-lg">Business idea planning</h3>
-                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and !</p>
-                  </div>
-                  <div class="icon">
-                    <img src="/assets/card-icon-1-6259a26c.png" alt="">
-                  </div>
+                <!-- <div class="icon">
+                    <img src="assets/img/card-icon-1.png" alt="">
+                  </div> -->
+              </div>
+              <div class="service-card col-md-5">
+                <div class="text">
+                  <h3 class="font-text-lg">Consultoria em Estratégia Digital</h3>
+                  <p>Oferecemos orientação especializada para ajudá-lo a desenvolver uma estratégia digital sólida,
+                    alinhada aos seus objetivos de negócios e maximizando o retorno sobre o investimento.</p>
                 </div>
+                <!-- <div class="icon">
+                    <img src="assets/img/card-icon-1.png" alt="">
+                  </div> -->
               </div>
             </div>
           </div>
         </div>
-        <div class="container">
-          <div class="row justify-content-center mt-5">
-            <div class="col-md-8 text-center">
-              <h2>You can find here</h2>
-              <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or</p>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-8 col-xxl-8 text-center">
+            <h3>Transformando sua visão em realidade digital</h3>
+            <p>Nossos serviços são adaptados às suas necessidades específicas, visando não apenas atender, mas superar
+              suas expectativas. Entre em contato conosco hoje para descobrir como podemos impulsionar sua presença
+              online e levar sua marca para o próximo nível!</p>
+          </div>
+        </div>
+        <div class="row mt-5 justify-content-center container-mini-card">
+          <div class="col-md-lg mini-card">
+            <div class="icon">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAArCAYAAABmbJjGAAAABHNCSVQICAgIfAhkiAAAAflJREFUWEe1lotRwzAQRJMOoAJSAlRAqACoAFMBUAGhAqACQgWECggVABWQVABUALseiznLOn3ss2Y8MUjepzudVppOJpNfPNZtF4LfUnQ6AugDmvv+zMcA3QCySIGuMOC9MI87GP8kvjkIafgRHWHQuhBUYfxD880PfgnuNAvQEqpnjfIjfgkeBfQlojjHO8HmIFbXm1DtlLXrG5q6OwhdNGLBsrYCMRq3Z4JlbQGaQeRTpC1Y1hYgVleyrC1AK4gcp8raApRV1kNBcwi8iPU5wXvLrb2NtO1b3rKsQ/tT/o+2NOsLkmWdAp1iwKoPyC/rGOjf+/qANGG6NiPlRNi2eLiZ67WzBHFPVWIWrSPHCsSqk4ffPf6+lKFbgJgyWpE78LLuDDzGQ/uBi7pUFoeRMCLXso5ybaE1Z2Z6bsVHqoPn3oJCAqwuVplL2Sve59pMCVoonaygvaYvBKIFOWHufpbyJgbS+tboOFRAnNy1+JDXNNqS2hhRKci/JzxDQBZDUK8UxPVgytzxXRsmnphz1+BSkO/atWHGUub6SkBcM3kGqZfFEDgXREvhsc00sbUM0zIiX6tlmGOBOoY5Bih6G40Bc9fIaUQviVag6JU3lb7ciKKGmYLkbtikYVqBkoZpAaKHJQ1zKIgeVuFJGuZQEO1mkyOSM+YPADaWXKF/p4EAAAAASUVORK5CYII=" alt="">
+            </div>
+            <div class="text">
+              <p><strong>Experiência Profissional:</strong> Equipe experiente e qualificada para lidar com seu projeto.
+              </p>
             </div>
           </div>
-          <div class="row mt-5">
-            <div class="col-md-4">
-              <div class="mini-card">
-                <div class="icon">
-                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAArCAYAAABmbJjGAAAABHNCSVQICAgIfAhkiAAAAflJREFUWEe1lotRwzAQRJMOoAJSAlRAqACoAFMBUAGhAqACQgWECggVABWQVABUALseiznLOn3ss2Y8MUjepzudVppOJpNfPNZtF4LfUnQ6AugDmvv+zMcA3QCySIGuMOC9MI87GP8kvjkIafgRHWHQuhBUYfxD880PfgnuNAvQEqpnjfIjfgkeBfQlojjHO8HmIFbXm1DtlLXrG5q6OwhdNGLBsrYCMRq3Z4JlbQGaQeRTpC1Y1hYgVleyrC1AK4gcp8raApRV1kNBcwi8iPU5wXvLrb2NtO1b3rKsQ/tT/o+2NOsLkmWdAp1iwKoPyC/rGOjf+/qANGG6NiPlRNi2eLiZ67WzBHFPVWIWrSPHCsSqk4ffPf6+lKFbgJgyWpE78LLuDDzGQ/uBi7pUFoeRMCLXso5ybaE1Z2Z6bsVHqoPn3oJCAqwuVplL2Sve59pMCVoonaygvaYvBKIFOWHufpbyJgbS+tboOFRAnNy1+JDXNNqS2hhRKci/JzxDQBZDUK8UxPVgytzxXRsmnphz1+BSkO/atWHGUub6SkBcM3kGqZfFEDgXREvhsc00sbUM0zIiX6tlmGOBOoY5Bih6G40Bc9fIaUQviVag6JU3lb7ciKKGmYLkbtikYVqBkoZpAaKHJQ1zKIgeVuFJGuZQEO1mkyOSM+YPADaWXKF/p4EAAAAASUVORK5CYII=" alt="">
-                </div>
-                <div class="text">
-                  <p>But I must explain to you how all this mistaken idea of</p>
-                </div>
-              </div>
+
+          <div class="col-md-lg mini-card">
+            <div class="icon">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAArCAYAAABmbJjGAAAABHNCSVQICAgIfAhkiAAAAflJREFUWEe1lotRwzAQRJMOoAJSAlRAqACoAFMBUAGhAqACQgWECggVABWQVABUALseiznLOn3ss2Y8MUjepzudVppOJpNfPNZtF4LfUnQ6AugDmvv+zMcA3QCySIGuMOC9MI87GP8kvjkIafgRHWHQuhBUYfxD880PfgnuNAvQEqpnjfIjfgkeBfQlojjHO8HmIFbXm1DtlLXrG5q6OwhdNGLBsrYCMRq3Z4JlbQGaQeRTpC1Y1hYgVleyrC1AK4gcp8raApRV1kNBcwi8iPU5wXvLrb2NtO1b3rKsQ/tT/o+2NOsLkmWdAp1iwKoPyC/rGOjf+/qANGG6NiPlRNi2eLiZ67WzBHFPVWIWrSPHCsSqk4ffPf6+lKFbgJgyWpE78LLuDDzGQ/uBi7pUFoeRMCLXso5ybaE1Z2Z6bsVHqoPn3oJCAqwuVplL2Sve59pMCVoonaygvaYvBKIFOWHufpbyJgbS+tboOFRAnNy1+JDXNNqS2hhRKci/JzxDQBZDUK8UxPVgytzxXRsmnphz1+BSkO/atWHGUub6SkBcM3kGqZfFEDgXREvhsc00sbUM0zIiX6tlmGOBOoY5Bih6G40Bc9fIaUQviVag6JU3lb7ciKKGmYLkbtikYVqBkoZpAaKHJQ1zKIgeVuFJGuZQEO1mkyOSM+YPADaWXKF/p4EAAAAASUVORK5CYII=" alt="">
             </div>
-            <div class="col-md-4">
-              <div class="mini-card">
-                <div class="icon">
-                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAArCAYAAABmbJjGAAAABHNCSVQICAgIfAhkiAAAAflJREFUWEe1lotRwzAQRJMOoAJSAlRAqACoAFMBUAGhAqACQgWECggVABWQVABUALseiznLOn3ss2Y8MUjepzudVppOJpNfPNZtF4LfUnQ6AugDmvv+zMcA3QCySIGuMOC9MI87GP8kvjkIafgRHWHQuhBUYfxD880PfgnuNAvQEqpnjfIjfgkeBfQlojjHO8HmIFbXm1DtlLXrG5q6OwhdNGLBsrYCMRq3Z4JlbQGaQeRTpC1Y1hYgVleyrC1AK4gcp8raApRV1kNBcwi8iPU5wXvLrb2NtO1b3rKsQ/tT/o+2NOsLkmWdAp1iwKoPyC/rGOjf+/qANGG6NiPlRNi2eLiZ67WzBHFPVWIWrSPHCsSqk4ffPf6+lKFbgJgyWpE78LLuDDzGQ/uBi7pUFoeRMCLXso5ybaE1Z2Z6bsVHqoPn3oJCAqwuVplL2Sve59pMCVoonaygvaYvBKIFOWHufpbyJgbS+tboOFRAnNy1+JDXNNqS2hhRKci/JzxDQBZDUK8UxPVgytzxXRsmnphz1+BSkO/atWHGUub6SkBcM3kGqZfFEDgXREvhsc00sbUM0zIiX6tlmGOBOoY5Bih6G40Bc9fIaUQviVag6JU3lb7ciKKGmYLkbtikYVqBkoZpAaKHJQ1zKIgeVuFJGuZQEO1mkyOSM+YPADaWXKF/p4EAAAAASUVORK5CYII=" alt="">
-                </div>
-                <div class="text">
-                  <p>But I must explain to you how all this mistaken idea of</p>
-                </div>
-              </div>
+            <div class="text">
+              <p><strong>Personalização Sob Medida:</strong> Soluções adaptadas às suas necessidades específicas.</p>
             </div>
-            <div class="col-md-4">
-              <div class="mini-card">
-                <div class="icon">
-                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAArCAYAAABmbJjGAAAABHNCSVQICAgIfAhkiAAAAflJREFUWEe1lotRwzAQRJMOoAJSAlRAqACoAFMBUAGhAqACQgWECggVABWQVABUALseiznLOn3ss2Y8MUjepzudVppOJpNfPNZtF4LfUnQ6AugDmvv+zMcA3QCySIGuMOC9MI87GP8kvjkIafgRHWHQuhBUYfxD880PfgnuNAvQEqpnjfIjfgkeBfQlojjHO8HmIFbXm1DtlLXrG5q6OwhdNGLBsrYCMRq3Z4JlbQGaQeRTpC1Y1hYgVleyrC1AK4gcp8raApRV1kNBcwi8iPU5wXvLrb2NtO1b3rKsQ/tT/o+2NOsLkmWdAp1iwKoPyC/rGOjf+/qANGG6NiPlRNi2eLiZ67WzBHFPVWIWrSPHCsSqk4ffPf6+lKFbgJgyWpE78LLuDDzGQ/uBi7pUFoeRMCLXso5ybaE1Z2Z6bsVHqoPn3oJCAqwuVplL2Sve59pMCVoonaygvaYvBKIFOWHufpbyJgbS+tboOFRAnNy1+JDXNNqS2hhRKci/JzxDQBZDUK8UxPVgytzxXRsmnphz1+BSkO/atWHGUub6SkBcM3kGqZfFEDgXREvhsc00sbUM0zIiX6tlmGOBOoY5Bih6G40Bc9fIaUQviVag6JU3lb7ciKKGmYLkbtikYVqBkoZpAaKHJQ1zKIgeVuFJGuZQEO1mkyOSM+YPADaWXKF/p4EAAAAASUVORK5CYII=" alt="">
+          </div>
+
+          <div class="col-md-lg mini-card">
+            <div class="icon">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAArCAYAAABmbJjGAAAABHNCSVQICAgIfAhkiAAAAflJREFUWEe1lotRwzAQRJMOoAJSAlRAqACoAFMBUAGhAqACQgWECggVABWQVABUALseiznLOn3ss2Y8MUjepzudVppOJpNfPNZtF4LfUnQ6AugDmvv+zMcA3QCySIGuMOC9MI87GP8kvjkIafgRHWHQuhBUYfxD880PfgnuNAvQEqpnjfIjfgkeBfQlojjHO8HmIFbXm1DtlLXrG5q6OwhdNGLBsrYCMRq3Z4JlbQGaQeRTpC1Y1hYgVleyrC1AK4gcp8raApRV1kNBcwi8iPU5wXvLrb2NtO1b3rKsQ/tT/o+2NOsLkmWdAp1iwKoPyC/rGOjf+/qANGG6NiPlRNi2eLiZ67WzBHFPVWIWrSPHCsSqk4ffPf6+lKFbgJgyWpE78LLuDDzGQ/uBi7pUFoeRMCLXso5ybaE1Z2Z6bsVHqoPn3oJCAqwuVplL2Sve59pMCVoonaygvaYvBKIFOWHufpbyJgbS+tboOFRAnNy1+JDXNNqS2hhRKci/JzxDQBZDUK8UxPVgytzxXRsmnphz1+BSkO/atWHGUub6SkBcM3kGqZfFEDgXREvhsc00sbUM0zIiX6tlmGOBOoY5Bih6G40Bc9fIaUQviVag6JU3lb7ciKKGmYLkbtikYVqBkoZpAaKHJQ1zKIgeVuFJGuZQEO1mkyOSM+YPADaWXKF/p4EAAAAASUVORK5CYII=" alt="">
+            </div>
+            <div class="text">
+              <p><strong>Excelência em Design:</strong> Compromisso com um design visualmente impressionante e coeso com
+                sua marca.</p>
+            </div>
+          </div>
+
+          <div class="col-md-lg mini-card">
+            <div class="icon">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAArCAYAAABmbJjGAAAABHNCSVQICAgIfAhkiAAAAflJREFUWEe1lotRwzAQRJMOoAJSAlRAqACoAFMBUAGhAqACQgWECggVABWQVABUALseiznLOn3ss2Y8MUjepzudVppOJpNfPNZtF4LfUnQ6AugDmvv+zMcA3QCySIGuMOC9MI87GP8kvjkIafgRHWHQuhBUYfxD880PfgnuNAvQEqpnjfIjfgkeBfQlojjHO8HmIFbXm1DtlLXrG5q6OwhdNGLBsrYCMRq3Z4JlbQGaQeRTpC1Y1hYgVleyrC1AK4gcp8raApRV1kNBcwi8iPU5wXvLrb2NtO1b3rKsQ/tT/o+2NOsLkmWdAp1iwKoPyC/rGOjf+/qANGG6NiPlRNi2eLiZ67WzBHFPVWIWrSPHCsSqk4ffPf6+lKFbgJgyWpE78LLuDDzGQ/uBi7pUFoeRMCLXso5ybaE1Z2Z6bsVHqoPn3oJCAqwuVplL2Sve59pMCVoonaygvaYvBKIFOWHufpbyJgbS+tboOFRAnNy1+JDXNNqS2hhRKci/JzxDQBZDUK8UxPVgytzxXRsmnphz1+BSkO/atWHGUub6SkBcM3kGqZfFEDgXREvhsc00sbUM0zIiX6tlmGOBOoY5Bih6G40Bc9fIaUQviVag6JU3lb7ciKKGmYLkbtikYVqBkoZpAaKHJQ1zKIgeVuFJGuZQEO1mkyOSM+YPADaWXKF/p4EAAAAASUVORK5CYII=" alt="">
+            </div>
+            <div class="text">
+              <p><strong>Foco no Cliente:</strong> Atendimento centrado no cliente, ouvindo suas ideias e garantindo sua
+                satisfação.</p>
+            </div>
+          </div>
+
+          <div class="col-md-lg mini-card">
+            <div class="icon">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAArCAYAAABmbJjGAAAABHNCSVQICAgIfAhkiAAAAflJREFUWEe1lotRwzAQRJMOoAJSAlRAqACoAFMBUAGhAqACQgWECggVABWQVABUALseiznLOn3ss2Y8MUjepzudVppOJpNfPNZtF4LfUnQ6AugDmvv+zMcA3QCySIGuMOC9MI87GP8kvjkIafgRHWHQuhBUYfxD880PfgnuNAvQEqpnjfIjfgkeBfQlojjHO8HmIFbXm1DtlLXrG5q6OwhdNGLBsrYCMRq3Z4JlbQGaQeRTpC1Y1hYgVleyrC1AK4gcp8raApRV1kNBcwi8iPU5wXvLrb2NtO1b3rKsQ/tT/o+2NOsLkmWdAp1iwKoPyC/rGOjf+/qANGG6NiPlRNi2eLiZ67WzBHFPVWIWrSPHCsSqk4ffPf6+lKFbgJgyWpE78LLuDDzGQ/uBi7pUFoeRMCLXso5ybaE1Z2Z6bsVHqoPn3oJCAqwuVplL2Sve59pMCVoonaygvaYvBKIFOWHufpbyJgbS+tboOFRAnNy1+JDXNNqS2hhRKci/JzxDQBZDUK8UxPVgytzxXRsmnphz1+BSkO/atWHGUub6SkBcM3kGqZfFEDgXREvhsc00sbUM0zIiX6tlmGOBOoY5Bih6G40Bc9fIaUQviVag6JU3lb7ciKKGmYLkbtikYVqBkoZpAaKHJQ1zKIgeVuFJGuZQEO1mkyOSM+YPADaWXKF/p4EAAAAASUVORK5CYII=" alt="">
+            </div>
+            <div class="text">
+              <p><strong>Resultados Mensuráveis:</strong> Estratégias de marketing digital comprovadas para impulsionar
+                resultados tangíveis.</p>
+            </div>
+          </div>
+
+          <div class="col-md-lg mini-card">
+            <div class="icon">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAArCAYAAABmbJjGAAAABHNCSVQICAgIfAhkiAAAAflJREFUWEe1lotRwzAQRJMOoAJSAlRAqACoAFMBUAGhAqACQgWECggVABWQVABUALseiznLOn3ss2Y8MUjepzudVppOJpNfPNZtF4LfUnQ6AugDmvv+zMcA3QCySIGuMOC9MI87GP8kvjkIafgRHWHQuhBUYfxD880PfgnuNAvQEqpnjfIjfgkeBfQlojjHO8HmIFbXm1DtlLXrG5q6OwhdNGLBsrYCMRq3Z4JlbQGaQeRTpC1Y1hYgVleyrC1AK4gcp8raApRV1kNBcwi8iPU5wXvLrb2NtO1b3rKsQ/tT/o+2NOsLkmWdAp1iwKoPyC/rGOjf+/qANGG6NiPlRNi2eLiZ67WzBHFPVWIWrSPHCsSqk4ffPf6+lKFbgJgyWpE78LLuDDzGQ/uBi7pUFoeRMCLXso5ybaE1Z2Z6bsVHqoPn3oJCAqwuVplL2Sve59pMCVoonaygvaYvBKIFOWHufpbyJgbS+tboOFRAnNy1+JDXNNqS2hhRKci/JzxDQBZDUK8UxPVgytzxXRsmnphz1+BSkO/atWHGUub6SkBcM3kGqZfFEDgXREvhsc00sbUM0zIiX6tlmGOBOoY5Bih6G40Bc9fIaUQviVag6JU3lb7ciKKGmYLkbtikYVqBkoZpAaKHJQ1zKIgeVuFJGuZQEO1mkyOSM+YPADaWXKF/p4EAAAAASUVORK5CYII=" alt="">
+            </div>
+            <div class="text">
+              <p><strong>Suporte Contínuo:</strong> Compromisso de suporte contínuo, atualizações e crescimento a longo
+                prazo.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-md-4">
+                  <p class="tagline">Works</p>
+                  <h2>My portfólio</h2>
+                  <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                    born and !</p>
+                  <button>View full</button>
                 </div>
-                <div class="text">
-                  <p>But I must explain to you how all this mistaken idea of</p>
+                <div class="col-md-8">
+                  <img src="/assets/portfolio-1-d5c38e57.png" alt="">
                 </div>
               </div>
             </div>
           </div>
-          <div class="row mt-4">
-            <div class="col-md-4">
-              <div class="mini-card">
-                <div class="icon">
-                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAArCAYAAABmbJjGAAAABHNCSVQICAgIfAhkiAAAAflJREFUWEe1lotRwzAQRJMOoAJSAlRAqACoAFMBUAGhAqACQgWECggVABWQVABUALseiznLOn3ss2Y8MUjepzudVppOJpNfPNZtF4LfUnQ6AugDmvv+zMcA3QCySIGuMOC9MI87GP8kvjkIafgRHWHQuhBUYfxD880PfgnuNAvQEqpnjfIjfgkeBfQlojjHO8HmIFbXm1DtlLXrG5q6OwhdNGLBsrYCMRq3Z4JlbQGaQeRTpC1Y1hYgVleyrC1AK4gcp8raApRV1kNBcwi8iPU5wXvLrb2NtO1b3rKsQ/tT/o+2NOsLkmWdAp1iwKoPyC/rGOjf+/qANGG6NiPlRNi2eLiZ67WzBHFPVWIWrSPHCsSqk4ffPf6+lKFbgJgyWpE78LLuDDzGQ/uBi7pUFoeRMCLXso5ybaE1Z2Z6bsVHqoPn3oJCAqwuVplL2Sve59pMCVoonaygvaYvBKIFOWHufpbyJgbS+tboOFRAnNy1+JDXNNqS2hhRKci/JzxDQBZDUK8UxPVgytzxXRsmnphz1+BSkO/atWHGUub6SkBcM3kGqZfFEDgXREvhsc00sbUM0zIiX6tlmGOBOoY5Bih6G40Bc9fIaUQviVag6JU3lb7ciKKGmYLkbtikYVqBkoZpAaKHJQ1zKIgeVuFJGuZQEO1mkyOSM+YPADaWXKF/p4EAAAAASUVORK5CYII=" alt="">
+          <div class="swiper-slide">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-md-4">
+                  <p class="tagline">Works</p>
+                  <h2>My portfólio</h2>
+                  <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                    born and !</p>
+                  <button>View full</button>
                 </div>
-                <div class="text">
-                  <p>But I must explain to you how all this mistaken idea of</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="mini-card">
-                <div class="icon">
-                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAArCAYAAABmbJjGAAAABHNCSVQICAgIfAhkiAAAAflJREFUWEe1lotRwzAQRJMOoAJSAlRAqACoAFMBUAGhAqACQgWECggVABWQVABUALseiznLOn3ss2Y8MUjepzudVppOJpNfPNZtF4LfUnQ6AugDmvv+zMcA3QCySIGuMOC9MI87GP8kvjkIafgRHWHQuhBUYfxD880PfgnuNAvQEqpnjfIjfgkeBfQlojjHO8HmIFbXm1DtlLXrG5q6OwhdNGLBsrYCMRq3Z4JlbQGaQeRTpC1Y1hYgVleyrC1AK4gcp8raApRV1kNBcwi8iPU5wXvLrb2NtO1b3rKsQ/tT/o+2NOsLkmWdAp1iwKoPyC/rGOjf+/qANGG6NiPlRNi2eLiZ67WzBHFPVWIWrSPHCsSqk4ffPf6+lKFbgJgyWpE78LLuDDzGQ/uBi7pUFoeRMCLXso5ybaE1Z2Z6bsVHqoPn3oJCAqwuVplL2Sve59pMCVoonaygvaYvBKIFOWHufpbyJgbS+tboOFRAnNy1+JDXNNqS2hhRKci/JzxDQBZDUK8UxPVgytzxXRsmnphz1+BSkO/atWHGUub6SkBcM3kGqZfFEDgXREvhsc00sbUM0zIiX6tlmGOBOoY5Bih6G40Bc9fIaUQviVag6JU3lb7ciKKGmYLkbtikYVqBkoZpAaKHJQ1zKIgeVuFJGuZQEO1mkyOSM+YPADaWXKF/p4EAAAAASUVORK5CYII=" alt="">
-                </div>
-                <div class="text">
-                  <p>But I must explain to you how all this mistaken idea of</p>
+                <div class="col-md-8">
+                  <img src="/assets/portfolio-1-d5c38e57.png" alt="">
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="mini-card">
-                <div class="icon">
-                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAArCAYAAABmbJjGAAAABHNCSVQICAgIfAhkiAAAAflJREFUWEe1lotRwzAQRJMOoAJSAlRAqACoAFMBUAGhAqACQgWECggVABWQVABUALseiznLOn3ss2Y8MUjepzudVppOJpNfPNZtF4LfUnQ6AugDmvv+zMcA3QCySIGuMOC9MI87GP8kvjkIafgRHWHQuhBUYfxD880PfgnuNAvQEqpnjfIjfgkeBfQlojjHO8HmIFbXm1DtlLXrG5q6OwhdNGLBsrYCMRq3Z4JlbQGaQeRTpC1Y1hYgVleyrC1AK4gcp8raApRV1kNBcwi8iPU5wXvLrb2NtO1b3rKsQ/tT/o+2NOsLkmWdAp1iwKoPyC/rGOjf+/qANGG6NiPlRNi2eLiZ67WzBHFPVWIWrSPHCsSqk4ffPf6+lKFbgJgyWpE78LLuDDzGQ/uBi7pUFoeRMCLXso5ybaE1Z2Z6bsVHqoPn3oJCAqwuVplL2Sve59pMCVoonaygvaYvBKIFOWHufpbyJgbS+tboOFRAnNy1+JDXNNqS2hhRKci/JzxDQBZDUK8UxPVgytzxXRsmnphz1+BSkO/atWHGUub6SkBcM3kGqZfFEDgXREvhsc00sbUM0zIiX6tlmGOBOoY5Bih6G40Bc9fIaUQviVag6JU3lb7ciKKGmYLkbtikYVqBkoZpAaKHJQ1zKIgeVuFJGuZQEO1mkyOSM+YPADaWXKF/p4EAAAAASUVORK5CYII=" alt="">
+          </div>
+          <div class="swiper-slide">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-md-4">
+                  <p class="tagline">Works</p>
+                  <h2>My portfólio</h2>
+                  <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                    born and !</p>
+                  <button>View full</button>
                 </div>
-                <div class="text">
-                  <p>But I must explain to you how all this mistaken idea of</p>
+                <div class="col-md-8">
+                  <img src="/assets/portfolio-1-d5c38e57.png" alt="">
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-    
-  </body>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-arrow swiper-button-prev"></div>
+        <div class="swiper-arrow swiper-button-next"></div>
+      </div>
+    </section>
+
+    <section class="contact" id="contato">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h2>Juntos, vamos construir <br> algo incrível!</h2>
+            <a class="btn mt-5" href="https://wa.me/5511948470298" target="_blank">Entre em contato!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center py-4">
+    <p class="mb-0">Begê Soluções® - todos os direitos reservados 2024.</p>
+  </footer>
+  
+  <script>
+      var checkbox = document.getElementById("checkboxMenu");
+      var menu = document.getElementById('divMenu')
+      function verificarSelecionado() {
+
+        if(menu){
+          if (checkbox.checked) {
+            menu.style.display = "flex";
+          } else {
+            menu.style.display = "none";
+          }
+        }
+      }
+      document.addEventListener("DOMContentLoaded", function() {
+        var menuMobiles = document.querySelectorAll(".menu-mobile");
+        menuMobiles.forEach(function(menuMobile) {
+          menuMobile.addEventListener("click", function() {
+            menu.style.display = "none";
+            document.getElementById('checkboxMenu').checked = false;
+          });
+        });
+      });
+  </script>
+</body>
+
 </html>
